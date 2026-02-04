@@ -39,15 +39,15 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-blue-100 relative overflow-hidden">
       <video
+        src="/weather-bg.mp4"
         autoPlay
         loop
         muted
+        playsInline
         preload="auto"
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        <source src="/weather-bg.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 pointer-events-none"
+      />
+
       <div className="absolute inset-0 bg-black/30 z-10"></div>
       <div className="p-10 bg-white/50 rounded-lg shadow-lg max-w-md w-full z-10">
         <h1 className="text-4xl font-bold text-center text-blue-800 m-6">
