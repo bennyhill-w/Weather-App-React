@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import WeatherCard from "./components/WeatherCard";
-import video from "./weather-bg.mp4";
+import video from "./weather-bg.mp4?url";
 
 function App() {
   const [weather, setWeather] = useState(null);
