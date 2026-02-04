@@ -2,7 +2,6 @@ import { useState } from "react";
 import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import WeatherCard from "./components/WeatherCard";
-import video from "./weather-bg.mp4?url";
 
 function App() {
   const [weather, setWeather] = useState(null);
@@ -45,7 +44,7 @@ function App() {
         muted
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src={video} type="video/mp4" />
+        <source src="/weather-bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 bg-black/30 z-10"></div>
